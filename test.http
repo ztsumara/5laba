@@ -1,0 +1,29 @@
+GET /
+Host: 127.0.0.1:5002
+
+###
+
+GET /starts
+Host: 127.0.0.1:5002
+
+###
+GET /qwert
+Host: 127.0.0.1:5002
+
+###
+POST /comments
+Host: 127.0.0.1:5002
+Content-Type: application/x-www-form-urlencoded
+
+comment=hello%20its%20a%20comment
+
+###
+POST /comments
+Host: 127.0.0.1:5002
+Content-Type: application/json
+
+{
+    "comments": "sample"
+}
+
+
