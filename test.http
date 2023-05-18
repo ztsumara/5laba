@@ -1,4 +1,4 @@
-GET /comments/Ivan?
+GET /comments/644134100f2f0d43333b8dd1?
 Host: 127.0.0.1:5002
 
 ###
@@ -23,8 +23,8 @@ Host: 127.0.0.1:5002
 Content-Type: application/json
 
 {
-    "name": "Sergey",
-    "text": "is a student"
+    "name": "fgfgf",
+    "text": "Student"
 }
 
 

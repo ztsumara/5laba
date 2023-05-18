@@ -11,4 +11,4 @@ const db = mongoClient.db("test");
 const collection = db.collection("users");
 
 
-module.exports = collection;
+module.exports = db;
