@@ -1,4 +1,4 @@
-GET /comments/644134100f2f0d43333b8dd1?
+GET /CRUD/comments
 Host: 127.0.0.1:5002
 
 ###
