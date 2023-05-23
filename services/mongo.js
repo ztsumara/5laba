@@ -19,7 +19,7 @@ async function printAll() {
 }
 async function printById(key) {
     
-        
+    const collection = await db.collection('users');
     let mas;
     key=new ObjectId(key);
     console.log(key);
@@ -58,7 +58,7 @@ async function postcomment(req,res){
             res.status(404).send('Error');
         }
         else{
-            await insDocDB(body);
+            await Insert(body);
             const find = await printAll();
             res.send(find);
         }
@@ -73,8 +73,8 @@ async function getcomment(req,res){
 }
 async function getcommentid(req, res){
     let id = req.params.id;
-    key=new ObjectId(id);
-    const result = await printById({ _id: key});
+
+    const result = await printById(id);
         if(result === null){
             res.status(404);
             res.send('Error!');
