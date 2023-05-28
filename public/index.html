@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/awsm.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Краткая документация</h1>
-    <h2>Get запросы</h1>
-    <ul>
-        <li>/home - корневой путь, res = Hello, its a home page</li>
-        <li>/starts, res = количество запросов на данный путь</li>
-        <li>/comments, res = вывод всех документов в бд</li>
-        <li>/comments/:id?, res = вывод документа с конкретным именем</li>
-    </ul>
-    <h2>Post запросы</h3>
-    <ul>
-        <li>/comments, res = пост запрос в ормате json, отправка данных в бд</li>
-    </ul>
-
+    <h1>Fetch_Yaganov_Alihan</h1>
+    <form action="/CRUD/apikey/" id="forma">
+    
+        <fieldset>
+          <legend>ApiKey</legend>
+          <ul>
+            <li>
+              <label for="name">Имя:*</label>
+              <input type="text" name="name" placeholder="Иван Иванов" id="name" required>
+            </li>
+          </ul>
+        </fieldset>
+       
+        <div>
+          <button class="but" type="submit">Отправить</button>
+          
+        </div>
+      </form>
+      <table class="myTable" id="bagua-table">
+        <p class="forp">Имя моделей</p>
+    
+      </table>
+      <div class="forflex">
+        <button class="but read" type="button">Просмотр</button>
+        <button class="but remove" type="button">Удалить</button>
+        <button class="but update" type="button">Обновить</button>
+      </div>
+      <dialog class="modal">
+        
+      </dialog>
+      <script src="html.js" defer></script>
 </body>
 </html>
