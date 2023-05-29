@@ -103,7 +103,7 @@ html {
     padding: 1.3rem 3.2rem;
     margin: 0 auto;
     gap: 0.8rem;
-    width:10rem;
+    width:5rem;
    
   
    
@@ -116,7 +116,7 @@ html {
     /* text */
   
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     line-height: 1.8rem;
     letter-spacing: -0.03em;
     
@@ -148,4 +148,10 @@ html {
 }
 .myTable{
   margin: 0 auto;
+}
+.threejs {
+  margin: 0 auto;
+  width: 70%;
+  /*aspect-ratio: 1;*/
+  height: 400px;
 }
